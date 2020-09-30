@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flex Panels 💪</title>
+  <title>Character Select Page D&D</title>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -46,17 +46,22 @@
       background-position: center;
       flex: 1;
       justify-content: center;
+      align-items: center;
       display: flex;
       flex-direction: column;
     }
 
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+    .panel1 { background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0dc665ef-a1d4-49fb-89f5-b41425e5fb73/d82on95-0c4b561f-d7b7-4800-a2af-ee884e244752.jpg/v1/fill/w_1280,h_1461,q_75,strp/samurai_orc_helmless_by_chenthooran_d82on95-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNDYxIiwicGF0aCI6IlwvZlwvMGRjNjY1ZWYtYTFkNC00OWZiLTg5ZjUtYjQxNDI1ZTVmYjczXC9kODJvbjk1LTBjNGI1NjFmLWQ3YjctNDgwMC1hMmFmLWVlODg0ZTI0NDc1Mi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.h1KhlKb8DlJr090a6QvZcBA24YGOpukbSUOgqnqaO7s); }
+    
+    .panel2 { background-image:url(https://cdnb.artstation.com/p/assets/images/images/027/159/305/large/art-of-nate-dark-elf-final-x.jpg?1590752819); }
+    
+    .panel3 { background-image:url(https://cdnb.artstation.com/p/assets/images/images/026/917/039/large/devin-durocher-smoke-final.jpg?1590079307); }
+    
+    .panel4 { background-image:url(https://cdna.artstation.com/p/assets/images/images/022/786/330/large/elisa-serio-fighter.jpg?1576683361); }
+    
+    .panel5 { background-image:url(https://cdna.artstation.com/p/assets/images/images/013/324/614/large/wisnu-tan-rage-bellower-uplox.jpg); }
 
-    /* Flex Items */
+    /* Flex Children */
     .panel > * {
       margin: 0;
       width: 100%;
@@ -65,12 +70,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
 
-    .panel > *:first-child { transform: translateY(-100%); }
-    .panel.open-active > *:first-child { transform: translateY(0); }
-    .panel > *:last-child { transform: translateY(100%); }
-    .panel.open-active > *:last-child { transform: translateY(0); }
+    }
 
     .panel p {
       text-transform: uppercase;
@@ -78,6 +79,12 @@
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       font-size: 2em;
     }
+
+    .panel > *:first-child { transform: translateY(-100%); }
+    .panel.open-active > *:first-child { transform: translateY(0); }
+    .panel > *:last-child { transform: translateY(100%); }
+    .panel.open-active > *:last-child { transform: translateY(0); }
+
     
     .panel p:nth-child(2) {
       font-size: 4em;
@@ -87,61 +94,60 @@
       flex: 5;
       font-size: 40px;
     }
-    
-    @media only screen and (max-width: 600px) {
-      .panel p {
-        font-size: 1em;
-      }
-    }
+
   </style>
 
 
   <div class="panels">
     <div class="panel panel1">
-      <p>Hey</p>
-      <p>Let's</p>
-      <p>Dance</p>
+      <p>Ubzag</p>
+      <p>Warrior</p>
+      <p>Orc</p>
     </div>
     <div class="panel panel2">
-      <p>Give</p>
-      <p>Take</p>
-      <p>Receive</p>
+      <p>Rania</p>
+      <p>Priestess</p>
+      <p>Elf</p>
     </div>
     <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
+      <p>Pattheier</p>
+      <p>Warlock</p>
+      <p>Leonin</p>
     </div>
     <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
+      <p>Aneira</p>
+      <p>Rouge</p>
+      <p>Human</p>
     </div>
     <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
+      <p>Loxx</p>
+      <p>Berzerker</p>
+      <p>Minotaur</p>
     </div>
   </div>
 
   <script>
+
     const panels = document.querySelectorAll('.panel');
 
     function toggleOpen() {
-      console.log('Hello');
-      this.classList.toggle('open');
+      this.classList.toggle('open')  
     }
 
     function toggleActive(e) {
-      console.log(e.propertyName);
-      if (e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
+      if(e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active'); 
       }
+       
     }
+
 
     panels.forEach(panel => panel.addEventListener('click', toggleOpen));
     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
   </script>
+
+
 
 </body>
 </html>
